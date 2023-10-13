@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(44, 42, 42);
+}
+
+.box1 {
+    display: grid;
+    grid-template-rows: 65px 349px;
+    gap: 5px;
+    padding: 4px;
+    height: 424px;
+    width: 300px;    
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 1.5em rgb(154, 37, 221);
+}
+
+#showBox {
+    height: 49px;
+    width: calc(100% - 28px);
+    font-size: 30px;
+    text-align: right;
+    color: black;
+    background-color: rgb(160, 168, 175);
+    border-radius: 7px;
+    border: none;
+    margin: 10px 14px 0 14px;
+}
+.box2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    padding: 9px 20px 10px 20px;
+    max-width: 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+
+button {
+    height: 50px;
+    border-radius: 14px;
+    font-size: 20px;
+    transition-property: all;
+    transition-duration: 0.1s;
+    border: none;
+}
+
+.button1 {
+    color: rgb(255, 217, 0);
+    background: transparent;
+}
+
+.operator {
+    color: lime;
+    background: transparent;
+}
+
+.number {
+    color: white;
+    background: transparent;
+}
+
+.button_equal {
+    grid-column: span 2;
+    border-radius: 14px;
+    color: rgb(255, 255, 255);
+    background-color: orange;
+}
+
+.box2 button:hover {
+    box-shadow: 0 0 0.5em rgb(116, 116, 116);
+}
+
+.box2 button:active {
+    color: rgb(252, 249, 249);
+    background-color: rgb(42, 42, 43);
+    box-shadow: 0 0 0.7em rgb(255, 255, 255);
+}
